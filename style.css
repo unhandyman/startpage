@@ -1,10 +1,3 @@
-
-
-/* TODO: add hover animations */
-/* TODO: add wrap for links for when zooming in */
-/* TODO: add wrap for link containers when viewport gets smaller */
-
-
 body {
 	background-color: #282828;
 	height: 100vh;
@@ -13,15 +6,18 @@ body {
 }
 
 #container-categories {
-	/* this centers the child in a flexbox */
+	/* this centers the child in a flexbox vertically and horizontally and makes the children not 100vh by filling up the space with the margin of the element */
 	margin: auto;
 	display: flex;
 	gap: 3vw;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .container-links {
 	background-color: #a89984;
-	width: 20vw;
+	/* fixed width needed for wrapping flexbox items */
+	width: 300px;
 	padding: 10px;
 	border-radius: 10px;
 	/* shadow: vertical horizontal blur spread color */
@@ -44,7 +40,6 @@ body {
 	justify-content: center;
 }
 
-
 /* link style */
 a:link {
 	color: #282828;
@@ -52,6 +47,8 @@ a:link {
 	text-decoration: none;
 	width: 100%;
 	border-radius: 4px;
+	padding: 4px;
+	transition: .2s;
 }
 a:visited {
 	color: #282828;
