@@ -1,26 +1,64 @@
+
+
+/* TODO: add hover animations */
+/* TODO: add wrap for links for when zooming in */
+/* TODO: add wrap for link containers when viewport gets smaller */
+
+
 body {
-	align-items: center;
-	justify-items: center;
 	background-color: #282828;
 	height: 100vh;
 	margin: 0;
-	display: grid;
-	grid-template-rows: repeat(3, 1fr);
-	grid-template-columns: 1fr;
-}
-
-.container-links {
-	background-color: #665c54;
-	width: 30vw;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
 }
 
 #container-categories {
-	height: 33vh;
-	display: grid;
-	grid-template-rows: 1fr;
-	grid-template-columns: repeat(2, 1fr);
-	grid-column-gap: 5vw;
-	grid-row: 2;
+	/* this centers the child in a flexbox */
+	margin: auto;
+	display: flex;
+	gap: 3vw;
+}
+
+.container-links {
+	background-color: #a89984;
+	width: 20vw;
+	padding: 10px;
+	border-radius: 10px;
+	/* shadow: vertical horizontal blur spread color */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text-category {
+	color: #282828;
+	text-align: center;
+}
+
+.list-links {
+	list-style-type: none;
+	padding: 10px;
+}
+
+.list-item {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+
+/* link style */
+a:link {
+	color: #282828;
+	background-color: #a89984;
+	text-decoration: none;
+	width: 100%;
+	border-radius: 4px;
+}
+a:visited {
+	color: #282828;
+	background-color: #a89984;
+	text-decoration: none;
+}
+a:hover {
+	color: #a89984;
+	background-color: #282828;
 }
