@@ -17,7 +17,8 @@ body {
 .container-links {
 	background-color: #a89984;
 	/* fixed width needed for wrapping flexbox items */
-	width: 300px;
+	/* width: 300px; */
+	width: 220px;
 	padding: 10px;
 	border-radius: 10px;
 	/* shadow: vertical horizontal blur spread color */
@@ -38,6 +39,13 @@ body {
 	text-align: center;
 	display: flex;
 	justify-content: center;
+}
+
+hr {
+	border: none;
+	width: 10%;
+	height: 1px;
+	background-color: #282828;
 }
 
 /* link style */
