@@ -10,6 +10,22 @@
 </head>
 
 <body>
+<main>
+	<form id="search-form" action="https://google.de/search">
+		<div class="wrapper">
+			<input placeholder="Search" type="text" name="q" class="search" id="search" autofocus>
+			<!-- lose focus on esc -->
+			<script>
+				document.onkeydown = function(evt) {
+					evt = evt || window.event;
+					if (evt.keyCode == 27) {
+						document.getElementById("search").blur(); 
+					}
+				};
+			</script>
+		</div>
+	</form>
+
 	<div id="container-categories">
 		<div class="container-links">
 			<h2 class="text-category">News</h2>
@@ -53,6 +69,7 @@
 			</ul>
 		</div>
 	</div>
+</main>
 </body>
 
 </html>

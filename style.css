@@ -6,6 +6,11 @@ body {
 	font-family: sans-serif;
 }
 
+main {
+	margin: auto;
+	width: 100%;
+}
+
 #container-categories {
 	/* this centers the child in a flexbox vertically and horizontally and makes the children not 100vh by filling up the space with the margin of the element */
 	margin: auto;
@@ -15,12 +20,39 @@ body {
 	justify-content: center;
 }
 
+.wrapper {
+	min-width: 100px;
+	text-align: center;
+	margin: 30px 0 30px 0;
+}
+
+.search {
+	border: 1px solid #3c3836;
+	border-radius: 5px;
+	height: 25px;
+	width: 30%;
+	padding: 2px 10px 2px 10px;
+	outline: 0;
+	background-color: #282828;
+	color: #a89984;
+}
+
+::placeholder {
+	color: #a89984;
+}
+
+.search:hover, .search:focus {
+	border: 1px solid #3c3836;
+	background-color: #3c3836;
+}
+
 .container-links {
 	background-color: #a89984;
 	/* fixed width needed for wrapping flexbox items */
 	/* width: 300px; */
 	width: 220px;
 	padding: 10px;
+	margin: 5px 5px 5px 5px;
 	border-radius: 10px;
 	/* shadow: vertical horizontal blur spread color */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
